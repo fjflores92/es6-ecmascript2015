@@ -37,13 +37,22 @@ const { name, age } = person;
 
 console.log(name, age);
 
-// es6 extensión de elementos
+// es6 extensión de elementos (spread)
 
 let team1 = ['Hugo', 'Paco', 'Luis'];
 let team2 = ['Valeria', 'Sarai', 'Camila'];
 let education = ['Fernando', ...team1, ...team2];
 
 console.log(education);
+
+// es6 rest arguments
+
+function sum( first, ...others ) {
+    for ( var i = 0; i < others.length; i++ )
+        first += others[i];
+    return first;
+}
+console.log(sum(1,2,3,4))// sum(1, 2, 3, 4) == 10;
 
 // es6 diferencia entre var y let
 
