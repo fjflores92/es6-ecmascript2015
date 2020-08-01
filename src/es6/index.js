@@ -1,3 +1,5 @@
+// 2015
+
 // es6 default params
 
 function newFunction (name = 'Paco', age = 28, country = 'MX') {
