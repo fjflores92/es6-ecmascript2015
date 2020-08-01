@@ -127,3 +127,42 @@ helloPromise()
     .then(response => console.log(response))
     .then(() => console.log('Hello!'))
     .catch(error => console.log(error));
+
+// es6 clases
+class Person {
+    constructor() {
+        this.firstName = '';
+        this.lastName = '';
+        this.age = 0;
+    }
+
+    saludar = (firstName, lastName) => {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        let saludo =  `¡Hola! Soy ${this.firstName} ${this.lastName}`;
+        console.log(saludo);
+    };
+}
+
+const paco = new Person();
+paco.saludar('Francisco', 'Flores');
+
+// es6 módulos
+import {hello} from './module';
+console.log(hello());
+
+// es6 generadores
+function* helloWorld() {
+    if (true) {
+        yield 'Hello, ';
+    }
+
+    if (true) {
+        yield 'World';
+    }
+}
+
+const generatorHello = helloWorld();
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
