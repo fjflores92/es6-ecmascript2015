@@ -1,0 +1,17 @@
+{
+  "name": "es6-ecmascript2015",
+  "version": "1.0.0",
+  "description": "Ejemplos de nuevas implementación en JavaScript desde la versión ES6.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecma",
+    "esmascript",
+    "es6",
+    "ecmascript2015"
+  ],
+  "author": "Francisco Flores",
+  "license": "MIT"
+}
