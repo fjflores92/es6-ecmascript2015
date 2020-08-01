@@ -26,7 +26,7 @@ const values = Object.values(data);
 console.log(values);
 console.log(values.length);
 
-// es8 padStart y padEnd
+// es8 String padding padStart y padEnd
 
 const string = 'hello';
 console.log(string.padStart(7,'hi'));
