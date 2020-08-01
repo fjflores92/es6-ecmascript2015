@@ -1,5 +1,6 @@
 // junio 2018
 
+// es9 Rest / Spread properties (...)
 // es9 objeto reposo / propagación (...)
 const person = {
     'name': 'Paco',
@@ -23,7 +24,7 @@ const person = {
 
 console.log(person);
 
-// es9 promise finally
+// es9 promise.finally
 
 const helloWorld = () => {
     return new Promise((resolve, reject) => {
@@ -36,7 +37,7 @@ helloWorld()
     .catch(e => console.log(e))
     .finally(() => console.log('Finalizo la promesa'));
 
-// es9 regex
+// es9 regex named capture groups
 
 const regexData = /([0-9]{4})-([0-9]{2})-([0-9]{2})/
 const match = regexData.exec('1992-05-12');
