@@ -1,6 +1,6 @@
 // es6 default params
 
-newFunction = (name = 'Paco', age = 28, country = 'MX') => {
+function newFunction (name = 'Paco', age = 28, country = 'MX') {
     console.log(name, age, country);
 }
 
@@ -65,3 +65,63 @@ const a = 'b';
 a = 'a';
 
 console.log(globalLet);
+
+// es6 parámetros en objetos
+let name = 'Paco';
+let age = 28;
+
+persona = {
+    name,
+    age
+}
+
+console.log(persona);
+
+// es6 iteración de arreglo de objetos y arrow functions
+const people = [
+    {
+        name: 'Paco',
+        age: 28,
+        country: 'MX'
+    },
+    {
+        name: 'Sarai',
+        age: 26,
+        country: 'MX'
+    }
+]
+
+let listOfNames = people.map(function (item) {
+    console.log(item.name);
+});
+
+let listOfAges = people.map(item => console.log(item.age));
+
+const listOfPeopleParams = people.map(({name, age, country} = item) => console.log(name, age, country));
+
+// es6 ejemplos de declaración de arrow functions
+const function1 = (param1, param2, param3) => {
+    console.log(param1, param2, param3);
+}
+
+const function2 = param => {
+    console.log(param);
+}
+
+const square = num => num * num;
+
+// es6 promesa
+const helloPromise = () => {
+    return new Promise((resolve, reject) => {
+        if (true) {
+            resolve('Hey!');
+        } else {
+            reject('Ups!!');
+        }
+    });
+}
+
+helloPromise()
+    .then(response => console.log(response))
+    .then(() => console.log('Hello!'))
+    .catch(error => console.log(error));
