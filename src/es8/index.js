@@ -34,3 +34,26 @@ console.log(string.padEnd(12,'-------'));
 
 // es8 async await
 
+const helloWorld = () => {
+    return new Promise((resolve, reject) => {
+        (false) ? setTimeout(() => resolve('Hello world'), 3000) : reject(new Error('Test error'));
+    });
+}
+
+const helloAsync = async () => {
+    const hello = await helloWorld();
+    console.log(hello);
+}
+
+helloAsync();
+
+const otherFunc = async () => {
+    try {
+        const hello = await helloWorld();
+        console.log(hello);
+    } catch (e) {
+        console.log(e);
+    }
+}
+
+otherFunc();
