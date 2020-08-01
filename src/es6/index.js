@@ -37,7 +37,7 @@ const { name, age } = person;
 
 console.log(name, age);
 
-// es6 extensión de elementos (spread)
+// es6 extensión de elementos (spread operator)
 
 let team1 = ['Hugo', 'Paco', 'Luis'];
 let team2 = ['Valeria', 'Sarai', 'Camila'];
